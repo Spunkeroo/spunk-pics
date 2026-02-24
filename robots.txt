@@ -1,0 +1,8 @@
+# robots.txt for spunk.pics
+User-agent: *
+Allow: /
+
+Sitemap: https://spunk.pics/sitemap.xml
+
+# Crawl-delay suggestion for polite bots
+Crawl-delay: 1
