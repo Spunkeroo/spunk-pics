@@ -1,0 +1,585 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Responsive Web Design Best Practices 2026: The Complete Guide | spunk.pics</title>
+<meta name="description" content="Responsive web design best practices for 2026. Mobile-first strategy, fluid grids, flexible images, media queries, viewport units, container queries, responsive typography with code examples.">
+<link rel="canonical" href="https://spunk.pics/blog/responsive-web-design-best-practices-2026">
+<meta property="og:title" content="Responsive Web Design Best Practices 2026: The Complete Guide">
+<meta property="og:description" content="Master responsive web design in 2026. Mobile-first, fluid grids, container queries, responsive typography, and more with real code examples.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://spunk.pics/blog/responsive-web-design-best-practices-2026">
+<meta property="og:site_name" content="Spunk Pics">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@SpunkArt13">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Responsive Web Design Best Practices 2026: The Complete Guide","description":"Master responsive web design in 2026 with mobile-first strategy, fluid grids, container queries, and responsive typography.","datePublished":"2026-02-27","dateModified":"2026-02-27","author":{"@type":"Organization","name":"SpunkArt","url":"https://spunk.pics"},"publisher":{"@type":"Organization","name":"SpunkArt","url":"https://spunk.pics"}}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GVNL11PEGP"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-GVNL11PEGP')</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","pn0x1z2y3w")</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0f;color:#e8e8f0;line-height:1.8}
+.container{max-width:800px;margin:0 auto;padding:32px 24px}
+a{color:#58a6ff;text-decoration:none}a:hover{text-decoration:underline}
+h1{font-size:2.2rem;margin-bottom:16px;background:linear-gradient(135deg,#ff5f1f,#ff9f1f);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-size:1.5rem;margin:32px 0 16px;color:#fff}h3{font-size:1.2rem;margin:24px 0 12px;color:#ddd}
+p{margin-bottom:16px;color:#ccc}ul,ol{margin:0 0 16px 24px;color:#ccc}li{margin-bottom:8px}
+.toc{background:#111;border:1px solid #222;border-radius:12px;padding:24px;margin:24px 0}
+.toc a{display:block;padding:4px 0;color:#999}.toc a:hover{color:#ff5f1f}
+.cta-box{background:linear-gradient(135deg,#1a1a2e,#16213e);border:2px solid #ff5f1f;border-radius:16px;padding:32px;text-align:center;margin:32px 0}
+.cta-box h3{color:#ff5f1f;margin-bottom:12px}
+.cta-box a{display:inline-block;background:#ff5f1f;color:#fff;padding:12px 24px;border-radius:8px;font-weight:600;margin-top:12px;text-decoration:none}
+.faq{background:#111;border-radius:12px;padding:24px;margin:32px 0}
+.faq details{border-bottom:1px solid #222;padding:12px 0}
+.faq summary{cursor:pointer;font-weight:600;color:#fff}.faq p{margin-top:8px}
+table{width:100%;border-collapse:collapse;margin:16px 0}th,td{padding:10px;border:1px solid #222;text-align:left;color:#ccc}th{background:#111;color:#fff}
+.step-box{background:#111;border-left:4px solid #ff5f1f;padding:16px 20px;margin:16px 0;border-radius:0 8px 8px 0}
+.step-box strong{color:#ff5f1f}
+.share-btn{display:inline-block;background:#1da1f2;color:#fff;padding:10px 20px;border-radius:8px;font-weight:600;margin:16px 0;text-decoration:none}
+footer{border-top:1px solid #222;margin-top:48px;padding-top:24px;text-align:center;color:#666;font-size:14px}
+code{background:#1a1a2e;padding:2px 8px;border-radius:4px;font-size:0.9em;color:#ff9f1f}
+pre{background:#1a1a2e;padding:16px;border-radius:8px;overflow-x:auto;margin:16px 0;color:#ccc;font-size:0.9em;line-height:1.6}
+</style></head><body>
+<div class="container">
+<p style="color:#666;margin-bottom:24px"><a href="https://spunk.pics/" style="color:#666">spunk.pics</a> &rarr; <a href="https://spunk.pics/blog/" style="color:#666">Blog</a> &rarr; Responsive Web Design Best Practices 2026</p>
+
+<h1>Responsive Web Design Best Practices 2026: The Complete Guide</h1>
+<p style="color:#666">Updated February 27, 2026 &middot; 16 min read</p>
+
+<p>Over 60% of web traffic now comes from mobile devices. If your website doesn't adapt seamlessly to every screen size &mdash; from a 375px phone to a 3840px ultrawide monitor &mdash; you're losing visitors, conversions, and search rankings. Google's mobile-first indexing means your mobile experience is your primary experience.</p>
+
+<p>This guide covers every responsive design technique you need in 2026, including modern CSS features like container queries, viewport units, and fluid typography that didn't exist when responsive design was first conceived. Every section includes production-ready code examples you can use immediately.</p>
+
+<div class="toc">
+<strong style="color:#fff">Table of Contents</strong>
+<a href="#mobile-first">1. Mobile-First Strategy</a>
+<a href="#viewport">2. The Viewport Meta Tag</a>
+<a href="#fluid-grids">3. Fluid Grids with CSS Grid and Flexbox</a>
+<a href="#images">4. Flexible and Responsive Images</a>
+<a href="#media-queries">5. Media Queries: Modern Approach</a>
+<a href="#viewport-units">6. Viewport Units (vw, vh, dvh, svh, lvh)</a>
+<a href="#container-queries">7. Container Queries: The Game-Changer</a>
+<a href="#typography">8. Responsive Typography with clamp()</a>
+<a href="#testing">9. Testing Responsive Designs</a>
+<a href="#performance">10. Performance on Mobile</a>
+<a href="#checklist">11. Responsive Design Checklist</a>
+<a href="#faq">12. FAQ</a>
+</div>
+
+<h2 id="mobile-first">1. Mobile-First Strategy</h2>
+
+<p>Mobile-first means writing your base CSS for the smallest screen, then adding complexity for larger screens using <code>min-width</code> media queries. This approach is superior to desktop-first for three reasons:</p>
+
+<div class="step-box">
+<strong>Performance:</strong> Mobile devices download only the CSS they need. Desktop enhancements (multi-column layouts, larger images, hover effects) are loaded conditionally. On a desktop-first site, mobile devices download unnecessary desktop CSS and then override it.
+</div>
+
+<div class="step-box">
+<strong>Simplicity:</strong> Mobile layouts are simpler &mdash; typically a single column with stacked elements. Starting simple and adding complexity is easier than starting complex and trying to simplify.
+</div>
+
+<div class="step-box">
+<strong>SEO:</strong> Google crawls and indexes your mobile version first. A mobile-first approach ensures the version Google sees is your primary, most-optimized version.
+</div>
+
+<pre>/* Mobile-first: base styles for all screens */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 24px;
+  }
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding: 32px;
+  }
+}
+
+/* Large desktop: 4 columns */
+@media (min-width: 1440px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}</pre>
+
+<h2 id="viewport">2. The Viewport Meta Tag</h2>
+
+<p>Every responsive page must include the viewport meta tag in the HTML head. Without it, mobile browsers render the page at a virtual desktop width (typically 980px) and zoom out to fit, making your carefully crafted responsive CSS useless.</p>
+
+<pre>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</pre>
+
+<p>This tag tells mobile browsers: "Set the viewport width to the actual device width and don't zoom." Here's what each part means:</p>
+
+<ul>
+<li><code>width=device-width</code> &mdash; Sets the viewport width to match the device's screen width in CSS pixels</li>
+<li><code>initial-scale=1.0</code> &mdash; Sets the initial zoom level to 100% (no zoom)</li>
+</ul>
+
+<p><strong>Do not add</strong> <code>user-scalable=no</code> or <code>maximum-scale=1</code>. These prevent users from zooming, which is a critical accessibility feature for visually impaired users. Google penalizes pages that prevent zooming in mobile usability reports.</p>
+
+<h2 id="fluid-grids">3. Fluid Grids with CSS Grid and Flexbox</h2>
+
+<p>Fluid grids use percentage-based or fractional widths instead of fixed pixel values. Elements resize proportionally as the viewport changes. In 2026, CSS Grid is the primary tool for page-level layouts, while Flexbox handles component-level alignment.</p>
+
+<h3>CSS Grid: Auto-Fit and Minmax</h3>
+
+<p>The most powerful responsive pattern in CSS Grid is <code>auto-fit</code> with <code>minmax()</code>. It creates a grid that automatically adjusts the number of columns based on available space, with no media queries needed:</p>
+
+<pre>/* Responsive grid: columns auto-adjust, no media queries */
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/*
+  How it works:
+  - Each column is at least 280px wide
+  - If there's room for 3 columns, you get 3
+  - If there's only room for 1, you get 1
+  - Columns stretch equally to fill remaining space (1fr)
+  - auto-fit collapses empty tracks; auto-fill does not
+*/</pre>
+
+<p>This single CSS declaration handles everything from a single-column phone layout to a four-column desktop layout. No breakpoints, no media queries, no JavaScript. The browser's layout engine handles everything.</p>
+
+<h3>Flexbox: Flexible Components</h3>
+
+<pre>/* Responsive navigation with Flexbox */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.nav-item {
+  flex: 1 1 auto;
+  min-width: 120px;
+  text-align: center;
+  padding: 12px 16px;
+}
+
+/* Responsive card layout with Flexbox */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 300px; /* grow, shrink, basis */
+  max-width: 100%;
+}</pre>
+
+<h3>Subgrid for Aligned Children</h3>
+
+<p>CSS Subgrid (supported in all major browsers since late 2023) lets child elements align to the parent grid's tracks. This solves the classic problem of card layouts where content doesn't line up across cards:</p>
+
+<pre>.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: subgrid; /* align to parent's row tracks */
+  grid-row: span 3; /* card spans 3 parent row tracks */
+}
+
+/* Now card titles, descriptions, and buttons
+   align horizontally across all cards */</pre>
+
+<h2 id="images">4. Flexible and Responsive Images</h2>
+
+<p>Images are the heaviest assets on most web pages. Responsive image techniques ensure you're serving the right size image for each device, saving bandwidth on mobile while maintaining quality on desktop.</p>
+
+<h3>Basic Fluid Images</h3>
+
+<pre>/* Make all images fluid by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Prevent layout shift by setting aspect ratio */
+img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}</pre>
+
+<h3>The srcset Attribute</h3>
+
+<p>The <code>srcset</code> attribute tells the browser about multiple image sizes so it can download the most appropriate one for the user's screen:</p>
+
+<pre>&lt;img
+  src="photo-800.webp"
+  srcset="
+    photo-400.webp 400w,
+    photo-800.webp 800w,
+    photo-1200.webp 1200w,
+    photo-1600.webp 1600w"
+  sizes="
+    (max-width: 640px) 100vw,
+    (max-width: 1024px) 50vw,
+    33vw"
+  alt="Descriptive alt text"
+  loading="lazy"
+  decoding="async"
+  width="1600"
+  height="900"
+&gt;</pre>
+
+<p>Here's what this tells the browser:</p>
+
+<ul>
+<li><strong>srcset:</strong> "I have this image in four sizes: 400px, 800px, 1200px, and 1600px wide"</li>
+<li><strong>sizes:</strong> "On screens up to 640px, the image fills the full viewport width. On screens up to 1024px, it fills half. On larger screens, it fills one-third."</li>
+<li>The browser combines srcset and sizes with the device's pixel ratio (1x, 2x, 3x) to download the optimal file. A phone with a 375px screen at 2x DPR will download the 800w version (375 x 2 = 750, closest match is 800w).</li>
+</ul>
+
+<h3>The Picture Element for Art Direction</h3>
+
+<pre>&lt;picture&gt;
+  &lt;source media="(max-width: 640px)" srcset="hero-mobile.webp" type="image/webp"&gt;
+  &lt;source media="(max-width: 1024px)" srcset="hero-tablet.webp" type="image/webp"&gt;
+  &lt;source srcset="hero-desktop.webp" type="image/webp"&gt;
+  &lt;img src="hero-desktop.jpg" alt="Hero image" width="1600" height="600"&gt;
+&lt;/picture&gt;</pre>
+
+<p>Use <code>&lt;picture&gt;</code> when you need different crops for different screens (art direction), not just different sizes. For example, a wide panoramic hero on desktop might crop to a square close-up on mobile.</p>
+
+<h3>Lazy Loading</h3>
+
+<pre>&lt;!-- Native lazy loading: load images only when they enter the viewport --&gt;
+&lt;img src="photo.webp" alt="..." loading="lazy" decoding="async"&gt;
+
+&lt;!-- Do NOT lazy-load above-the-fold images (LCP candidates) --&gt;
+&lt;img src="hero.webp" alt="..." loading="eager" fetchpriority="high"&gt;</pre>
+
+<p>The <code>loading="lazy"</code> attribute tells the browser to defer loading images until they're about to scroll into view. This is critical for pages with many images &mdash; it can reduce initial page weight by 50-80%. But never lazy-load your hero image or any above-the-fold content, as this directly harms your Largest Contentful Paint (LCP) score.</p>
+
+<h2 id="media-queries">5. Media Queries: Modern Approach</h2>
+
+<p>Media queries are the backbone of responsive design, but the way you use them in 2026 should be different from the 2015 approach. Instead of targeting specific device widths, target content breakpoints &mdash; the widths where your content starts looking bad.</p>
+
+<h3>Content-Based Breakpoints</h3>
+
+<pre>/* Don't do this: device-based breakpoints */
+@media (max-width: 375px) { /* iPhone SE */ }
+@media (max-width: 390px) { /* iPhone 14 */ }
+@media (max-width: 428px) { /* iPhone 14 Pro Max */ }
+
+/* Do this: content-based breakpoints */
+@media (min-width: 600px) { /* text line length gets comfortable */ }
+@media (min-width: 900px) { /* enough room for sidebar */ }
+@media (min-width: 1200px) { /* enough room for 3+ columns */ }</pre>
+
+<p>Resize your browser and watch where your content breaks. Add a breakpoint at that width. Different pages may need different breakpoints, and that's fine.</p>
+
+<h3>Modern Media Query Features</h3>
+
+<pre>/* Range syntax (Level 4) - cleaner than min/max */
+@media (width >= 768px) { }
+@media (768px <= width <= 1024px) { }
+
+/* Hover capability detection */
+@media (hover: hover) {
+  .button:hover { background: #ff5f1f; }
+}
+@media (hover: none) {
+  /* Touch device: no hover effects, use active state */
+  .button:active { background: #ff5f1f; }
+}
+
+/* Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition-duration: 0.01ms !important; }
+}
+
+/* Prefers color scheme (dark mode) */
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0a0a0f; --text: #e8e8f0; }
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #ffffff; --text: #111111; }
+}
+
+/* Prefers contrast */
+@media (prefers-contrast: high) {
+  :root { --border: 2px solid #000; }
+}
+
+/* Orientation */
+@media (orientation: landscape) and (max-height: 500px) {
+  /* Phone in landscape: reduce vertical spacing */
+  .hero { padding: 16px 0; }
+}</pre>
+
+<h2 id="viewport-units">6. Viewport Units (vw, vh, dvh, svh, lvh)</h2>
+
+<p>Viewport units let you size elements relative to the browser viewport. In 2026, the new dynamic viewport units solve the longstanding problem of mobile browser toolbars eating into <code>vh</code> calculations.</p>
+
+<table>
+<tr><th>Unit</th><th>Meaning</th><th>Mobile Browser Bar</th><th>Use When</th></tr>
+<tr><td><code>vw</code></td><td>1% of viewport width</td><td>N/A</td><td>Width-based sizing</td></tr>
+<tr><td><code>vh</code></td><td>1% of viewport height (initial)</td><td>Includes bar height</td><td>Desktop only</td></tr>
+<tr><td><code>dvh</code></td><td>1% of dynamic viewport height</td><td>Updates as bar hides/shows</td><td>Animations, dynamic layouts</td></tr>
+<tr><td><code>svh</code></td><td>1% of small viewport height</td><td>Assumes bar visible (smallest)</td><td>Safe full-height elements</td></tr>
+<tr><td><code>lvh</code></td><td>1% of large viewport height</td><td>Assumes bar hidden (largest)</td><td>Background sizing</td></tr>
+</table>
+
+<pre>/* Full-height hero that works on mobile */
+.hero {
+  min-height: 100svh; /* uses small viewport height */
+  /* On mobile, this is the height when the URL bar is visible
+     Content won't be hidden behind the URL bar */
+}
+
+/* Element that adapts as you scroll (bar hides) */
+.sticky-footer {
+  height: 60px;
+  bottom: calc(100dvh - 100svh); /* adjusts dynamically */
+}
+
+/* Safe full-screen backgrounds */
+.full-bg {
+  background-size: cover;
+  min-height: 100lvh; /* covers maximum possible height */
+}</pre>
+
+<h3>The Mobile Toolbar Problem, Solved</h3>
+
+<p>The classic <code>100vh</code> bug: on mobile Safari and Chrome, <code>100vh</code> includes the area behind the URL bar and bottom toolbar, causing content to be hidden. The fix is straightforward &mdash; use <code>100svh</code> for elements that must be fully visible, and <code>100dvh</code> for elements that should resize dynamically as the toolbar hides during scroll.</p>
+
+<h2 id="container-queries">7. Container Queries: The Game-Changer</h2>
+
+<p>Container queries are the biggest advancement in responsive design since media queries. While media queries respond to the viewport width, container queries respond to the width of the parent container. This means components can be truly self-contained &mdash; adapting their layout based on available space rather than screen size.</p>
+
+<div class="step-box">
+<strong>Why this matters:</strong> A card component might appear in a full-width main content area, a narrow sidebar, or a modal dialog &mdash; all on the same page, at the same viewport width. Media queries can't distinguish between these contexts. Container queries can.
+</div>
+
+<pre>/* Define a containment context */
+.card-wrapper {
+  container-type: inline-size;
+  container-name: card;
+}
+
+/* Card adapts to its container's width, not the viewport */
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@container card (min-width: 500px) {
+  .card {
+    grid-template-columns: 200px 1fr;
+    /* Side-by-side layout when container is wide enough */
+  }
+}
+
+@container card (min-width: 700px) {
+  .card {
+    grid-template-columns: 250px 1fr auto;
+    /* Three-column layout with action buttons */
+  }
+}</pre>
+
+<h3>Container Query Units</h3>
+
+<pre>/* Size relative to the container, not the viewport */
+.card-title {
+  font-size: clamp(1rem, 3cqi, 1.5rem);
+  /* cqi = 1% of container's inline size */
+}
+
+.card-image {
+  width: 50cqi; /* 50% of container width */
+  height: 30cqb; /* 30% of container block size */
+}</pre>
+
+<table>
+<tr><th>Unit</th><th>Meaning</th></tr>
+<tr><td><code>cqi</code></td><td>1% of container's inline size (width in LTR)</td></tr>
+<tr><td><code>cqb</code></td><td>1% of container's block size (height in LTR)</td></tr>
+<tr><td><code>cqmin</code></td><td>1% of container's smaller dimension</td></tr>
+<tr><td><code>cqmax</code></td><td>1% of container's larger dimension</td></tr>
+</table>
+
+<p>Container queries have universal browser support in 2026 (Chrome 105+, Safari 16+, Firefox 110+). There's no reason not to use them for component-level responsive design.</p>
+
+<h2 id="typography">8. Responsive Typography with clamp()</h2>
+
+<p>The <code>clamp()</code> function creates fluid typography that scales smoothly between a minimum and maximum size based on the viewport width. No breakpoints, no media queries &mdash; just a single declaration:</p>
+
+<pre>/* Fluid typography: scales from 1rem to 2.5rem based on viewport */
+h1 {
+  font-size: clamp(1.75rem, 4vw + 0.5rem, 3rem);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(1.25rem, 2.5vw + 0.5rem, 2rem);
+  line-height: 1.3;
+}
+
+p {
+  font-size: clamp(1rem, 1vw + 0.75rem, 1.2rem);
+  line-height: 1.8;
+  max-width: 65ch; /* optimal line length for readability */
+}</pre>
+
+<h3>How clamp() Works</h3>
+
+<p><code>clamp(minimum, preferred, maximum)</code> takes three values:</p>
+
+<ul>
+<li><strong>Minimum:</strong> The font never goes below this size (accessibility floor)</li>
+<li><strong>Preferred:</strong> A fluid calculation, usually combining vw with a rem base</li>
+<li><strong>Maximum:</strong> The font never exceeds this size (prevents absurdly large text on ultrawide monitors)</li>
+</ul>
+
+<h3>A Complete Responsive Type Scale</h3>
+
+<pre>:root {
+  /* Fluid type scale using clamp() */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.6vw, 1.375rem);
+  --text-xl: clamp(1.25rem, 1rem + 1.2vw, 1.75rem);
+  --text-2xl: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+  --text-3xl: clamp(1.875rem, 1rem + 3.5vw, 3.5rem);
+
+  /* Fluid spacing scale */
+  --space-xs: clamp(4px, 0.5vw, 8px);
+  --space-sm: clamp(8px, 1vw, 16px);
+  --space-md: clamp(16px, 2vw, 32px);
+  --space-lg: clamp(24px, 3vw, 48px);
+  --space-xl: clamp(32px, 5vw, 80px);
+}
+
+/* Usage */
+h1 { font-size: var(--text-3xl); }
+h2 { font-size: var(--text-2xl); }
+p { font-size: var(--text-base); }
+.section { padding: var(--space-lg) var(--space-md); }</pre>
+
+<h3>Line Length for Readability</h3>
+
+<p>The optimal line length for body text is 50-75 characters per line. Use the <code>ch</code> unit (width of the "0" character) to constrain your content:</p>
+
+<pre>.prose {
+  max-width: 65ch; /* approximately 65 characters per line */
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}</pre>
+
+<h2 id="testing">9. Testing Responsive Designs</h2>
+
+<p>Building responsive CSS is only half the job. You need to test across real devices and conditions:</p>
+
+<h3>Browser DevTools</h3>
+
+<ul>
+<li><strong>Chrome DevTools Device Mode:</strong> F12 > Toggle Device Toolbar. Simulates specific devices, touch events, and network throttling. Good for quick checks but doesn't replicate actual device rendering.</li>
+<li><strong>Firefox Responsive Design Mode:</strong> Ctrl+Shift+M. Offers DPR simulation and touch event emulation. Firefox's CSS Grid inspector is the best in any browser.</li>
+<li><strong>Safari Responsive Design Mode:</strong> Develop > Enter Responsive Design Mode. Essential for testing Safari-specific rendering, especially viewport units and fixed positioning.</li>
+</ul>
+
+<h3>Real Device Testing</h3>
+
+<p>Emulators don't catch everything. Test on actual devices for:</p>
+
+<ul>
+<li><strong>Touch targets:</strong> Are buttons and links at least 44x44px? Can you tap them accurately?</li>
+<li><strong>Scrolling performance:</strong> Does the page scroll smoothly or jank?</li>
+<li><strong>Viewport units:</strong> Does <code>100vh</code> behave correctly with the URL bar?</li>
+<li><strong>Text readability:</strong> Is body text legible without zooming?</li>
+<li><strong>Forms:</strong> Do input fields zoom on focus? (Set font-size to 16px+ to prevent iOS auto-zoom)</li>
+<li><strong>Orientation changes:</strong> Does the layout handle rotation gracefully?</li>
+</ul>
+
+<h2 id="performance">10. Performance on Mobile</h2>
+
+<p>Responsive design isn't just about layout &mdash; it's about performance. Mobile devices have slower processors, less memory, and often slower network connections. Every design decision should consider mobile performance.</p>
+
+<div class="step-box">
+<strong>Core Web Vitals targets (2026):</strong> LCP under 2.5 seconds, INP under 200ms, CLS under 0.1. These metrics directly impact Google search rankings on mobile.
+</div>
+
+<h3>Performance Best Practices</h3>
+
+<ul>
+<li><strong>Compress images:</strong> Serve WebP or AVIF. A 200KB JPG can be reduced to 50KB WebP with no visible quality loss.</li>
+<li><strong>Lazy load below-fold images:</strong> Use <code>loading="lazy"</code> to defer offscreen images.</li>
+<li><strong>Minimize CSS:</strong> Unused CSS is render-blocking. Remove unused rules or split CSS by route.</li>
+<li><strong>Defer non-critical JS:</strong> Use <code>defer</code> or <code>async</code> attributes on script tags.</li>
+<li><strong>Avoid layout shifts:</strong> Always set <code>width</code> and <code>height</code> or <code>aspect-ratio</code> on images and embeds.</li>
+<li><strong>Use system fonts:</strong> System font stacks load instantly. Web fonts add 100-500ms.</li>
+<li><strong>Reduce DOM depth:</strong> Deep nesting slows rendering. Keep your DOM flat where possible.</li>
+</ul>
+
+<h2 id="checklist">11. Responsive Design Checklist</h2>
+
+<table>
+<tr><th>Item</th><th>Check</th></tr>
+<tr><td>Viewport meta tag present</td><td><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></td></tr>
+<tr><td>Mobile-first CSS</td><td>Base styles for mobile, <code>min-width</code> queries for larger screens</td></tr>
+<tr><td>Fluid images</td><td><code>max-width: 100%; height: auto;</code> on all images</td></tr>
+<tr><td>srcset for art direction</td><td>Serve appropriately sized images per device</td></tr>
+<tr><td>Touch targets</td><td>All interactive elements 44x44px minimum</td></tr>
+<tr><td>No horizontal scroll</td><td>No content overflows the viewport width</td></tr>
+<tr><td>Readable text</td><td>16px+ base font size, 45-75ch line length</td></tr>
+<tr><td>Responsive typography</td><td><code>clamp()</code> for fluid font sizing</td></tr>
+<tr><td>No user-scalable=no</td><td>Users must be able to zoom</td></tr>
+<tr><td>Container queries</td><td>Components adapt to their container, not viewport</td></tr>
+<tr><td>Dynamic viewport units</td><td>Use <code>svh</code>/<code>dvh</code> instead of <code>vh</code> for mobile</td></tr>
+<tr><td>Lazy loading</td><td><code>loading="lazy"</code> on below-fold images</td></tr>
+<tr><td>Prefers-reduced-motion</td><td>Respect users who disable animations</td></tr>
+<tr><td>Core Web Vitals pass</td><td>LCP &lt; 2.5s, INP &lt; 200ms, CLS &lt; 0.1</td></tr>
+</table>
+
+<div class="cta-box">
+<h3>Optimize Your Images for Responsive Sites</h3>
+<p style="color:#ccc">Compress, resize, and convert images to WebP for faster loading across all devices.</p>
+<a href="https://spunk.codes/exclusive/image-compressor">Compress Images Free &rarr;</a>
+</div>
+
+<div class="faq" id="faq">
+<h2 style="margin-top:0">FAQ</h2>
+<details><summary>What breakpoints should I use in 2026?</summary><p>Don't use device-specific breakpoints. Instead, use content-based breakpoints: resize your browser and add a breakpoint wherever your layout breaks. Common starting points are 600px (large phones/small tablets), 900px (tablets/small laptops), and 1200px (desktop). The exact values depend on your content and design, not on specific device widths.</p></details>
+<details><summary>Should I still use media queries now that container queries exist?</summary><p>Yes, both serve different purposes. Media queries are for page-level layout decisions (sidebar visibility, navigation style, overall page structure). Container queries are for component-level layout decisions (card layout, widget appearance). Use media queries for the overall page architecture and container queries for reusable components that might appear in different layout contexts.</p></details>
+<details><summary>Is the 100vh bug on mobile fixed?</summary><p>Yes, with new viewport units. Use 100svh (small viewport height) for elements that must be fully visible &mdash; it accounts for the mobile browser's URL bar. Use 100dvh (dynamic viewport height) for elements that should resize as the toolbar hides/shows during scrolling. The old 100vh still behaves inconsistently on mobile, so prefer the new units.</p></details>
+<details><summary>How do I prevent iOS from zooming into form inputs?</summary><p>iOS Safari auto-zooms input fields with font-size below 16px. Set your input font-size to at least 16px to prevent this: <code>input, select, textarea { font-size: 16px; }</code>. This is the simplest and most accessible fix. Do not use maximum-scale=1 in the viewport meta tag, as that prevents all user zooming.</p></details>
+<details><summary>Is CSS Grid or Flexbox better for responsive layouts?</summary><p>They solve different problems. CSS Grid is best for two-dimensional page layouts (rows and columns). Flexbox is best for one-dimensional component layouts (a row of items or a column of items). Most responsive pages use Grid for the overall page structure and Flexbox for individual components like navigation bars, card internals, and form layouts. Use both.</p></details>
+<details><summary>What's the minimum touch target size?</summary><p>44x44 CSS pixels, per Apple's Human Interface Guidelines and WCAG 2.2 Level AAA (which specifies a 44x44px minimum for pointer targets). Google's recommendation is 48x48 CSS pixels with at least 8px spacing between targets. The larger your touch targets, the fewer mis-taps your users experience. This is especially important for navigation links, buttons, and form elements on mobile.</p></details>
+</div>
+
+<a class="share-btn" href="https://twitter.com/intent/tweet?text=Responsive%20web%20design%20best%20practices%20for%202026.%20Mobile-first%2C%20container%20queries%2C%20fluid%20typography%2C%20viewport%20units%2C%20and%20code%20examples&url=https%3A%2F%2Fspunk.pics%2Fblog%2Fresponsive-web-design-best-practices-2026&via=SpunkArt13" target="_blank">Share on X</a>
+
+<footer>
+<p><a href="https://spunk.pics">spunk.pics</a> &middot; <a href="https://spunk.codes">spunk.codes</a> &middot; <a href="https://spunk.bet">spunk.bet</a> &middot; <a href="https://spunk.work">spunk.work</a> &middot; <a href="https://spunkart.com">SpunkArt.com</a></p>
+</footer>
+</div>
+<script src="https://spunk.codes/cross-promo.js" defer></script>
+</body></html>
